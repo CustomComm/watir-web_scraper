@@ -12,7 +12,7 @@ module Watir
       attr_reader :errors, :attempts, :actions
 
       def initialize(args)
-        @browser_class = args[:browser] || Browser::Firefox
+        @browser_class = args[:browser] || Browser::Chrome
         @params = args[:params] || {}
         @max_attempts = args[:max_attempts] || DEFAULT_MAX_ATTEMPTS
         @actions = Array.wrap(args[:actions])
